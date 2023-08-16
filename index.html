@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM - Prompts </title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+       // Welcoming Users 
+       alert(`Hello there! And welcome to the first online ATM.
+       Amazing right? I know!
+       Proceed!`)
+
+       // PIN
+        let pin = +prompt(`Enter 4 digit PIN to Proceed`);
+        
+       // Displaying Options
+        let options = +prompt(`Select what you want to do below
+        1. Withdrawal
+        2. Transfer
+        3. Check Balance
+        4. Buy Airt1me 
+        5. Change PIN
+        6. Other Enquiry`); 
+        
+        // Handling Entries
+        if(options == 1) {
+            let amount = +prompt(`Enter Amount`);
+
+            alert(`Request Processing`);
+            alert(`Withdrawal of ${amount} was Successful!!`)
+            alert(`Refresh Page and try other options!`);
+
+        } else if(options == 2) {
+            +prompt(`Select Bank below
+            1. Access Bank
+            2. TiideLab MFB
+            3. Zenith
+            4. UBA
+            5. KUDA
+            6. Other Banks`);
+            
+            let account = +prompt(`Enter Account Number`);
+            alert(`Confirm account below:
+             ${account}`)
+            let transAmount = +prompt(`Enter Amount`);
+            alert(`Hurray... Transfer of ${transAmount} to ${account} was successful!!`);
+            alert(`Refresh page to try other options`);
+
+        } else if(options == 3) {
+            alert(`N250,875,485.45`);
+            alert(`Refresh page to try other options`);
+
+        } else if(options == 4) {
+            +prompt(`Select Network
+            1. MTN
+            2. GLO
+            3. AIRTEL
+            4. 9MOBILE
+            5. Other Networks`);
+
+            let airtimeNumber = +prompt(`Enter number`);
+
+            let airtimeAmount = +prompt(`Enter Amount`);
+
+            alert(`You have successfully recharged 0${airtimeNumber}
+            Have a lovely day!!`);
+            alert(`Refresh page to try other options`);
+
+        } else if(options == 5) {
+            let pinChange = +prompt(`Enter new PIN`);
+            +prompt(`Confirm new PIN`);
+            alert(`Your new pin is ${pinChange}
+            Don't forget it again!!`);
+            alert(`Refresh page to try other options`);
+
+        } else if(options == 6) {
+            alert(`Sorry, Service is currently unavailable`);
+            alert(`Call +234 8069487650 for further enquiries or visit nearest branch!`);
+            alert(`Refresh page to try other options`);
+
+        } else {
+            alert(`Please select an option!!`);
+            alert(`Refresh page to try other options`);
+        }
+    </script>
+</body>
+</html>
